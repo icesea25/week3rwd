@@ -165,11 +165,12 @@ a:hover{
 }
 
 .info ul{
-    padding: 16px 24px;
+    padding: 8px 24px;
 }
 
 .info li{
     font-size: 20px;
+    padding-bottom: 8px;
 }
 
 .info img{
