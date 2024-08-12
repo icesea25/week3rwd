@@ -105,12 +105,12 @@ a:hover{
 }
 
 
-h1{
+.h1{
     font-size: 48px;
     font-weight: bold;
 }
 
-h2{
+.h2{
     font-size: 36px;
 }
 
@@ -141,7 +141,7 @@ h2{
 }
 
 .colum {
-    margin-bottom: 80px;
+    margin-bottom: 32px;
 }
 
 .store{
@@ -255,12 +255,19 @@ h2{
 
 @media (max-width:576px) {
     .header{
-        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0 -12px;
+        margin-bottom: 40px;
+    }
+
+    .logo{
+        width: 80px;
+        margin: 0 16px;
     }
 
     .header .nav{
+        width:100%;
         flex-wrap: wrap;
-        margin: 0 -12px;
     }
 
     .nav a{
@@ -274,7 +281,7 @@ h2{
         padding:12px 0;
     }
 
-    .title1 h1{
+    .title1 .h1{
         font-size: 24px;
     }
 
@@ -287,8 +294,13 @@ h2{
         max-width: 276px;
     }
 
+    .colum {
+        margin-bottom: 40px;
+    }
+
     .card{
         width:100%;
+        margin-bottom: 24px;
     }
 
     .footer .nav {
@@ -306,7 +318,7 @@ h2{
 
 
     .contact img{
-        width: 24px;
+        width: 20px;
         margin-right: 10px;
     }
 
