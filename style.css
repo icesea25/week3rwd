@@ -79,6 +79,7 @@ a:hover{
 .header{
     justify-content: space-between;
     margin-bottom: 96px;
+    padding: 0 12px;
 }
 
 .logo{
@@ -105,7 +106,7 @@ a:hover{
 }
 
 
-.h1{
+h1{
     font-size: 48px;
     font-weight: bold;
 }
@@ -122,13 +123,26 @@ a:hover{
     align-items: center;
 }
 
-.box{
-    width: 307px;
-    border: 1px solid #CED4DA;
-    margin-left: 16px;
-    align-items: center;
-    padding: 6px 12px;
+select{
+    appearance: none;
+   -moz-appearance: none;
+   -webkit-appearance: none;
+   border-radius: 0%;
+   width: 307px;
+   border: 1px solid #CED4DA;
+   margin-left: 16px;
+   padding: 6px 12px;
+   cursor: pointer;
 }
+
+.custom-select {
+    background-image: url("images/arrow_drop_down_24dp.png");
+    background-position: right 0.5em top 50%, 0 0;
+    background-size: contain, cover;
+    background-repeat: no-repeat, repeat;
+}
+
+
 
 .box p{
     color: #495057;
@@ -214,6 +228,7 @@ a:hover{
 .footer .nav{
     font-size: 16px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer .nav li{
@@ -234,7 +249,8 @@ a:hover{
 }
 
 .privacy li{
-    padding-left:48px;
+    padding-left:40px;
+    
 }
 
 .pd-b{
@@ -243,8 +259,22 @@ a:hover{
 
 
 @media (max-width:768px) {
+    
     .card{
         width: 50%;
+    }
+
+    .contact {
+        font-size: 16px;
+    }
+
+    .contact img{
+        width: 20px;
+        margin-right: 10px;
+    }
+
+    .footer .nav {
+        display: none;
     }
 
     .footer .right img{
@@ -255,10 +285,14 @@ a:hover{
 
 
 @media (max-width:576px) {
+    .container {
+        max-width: 100%;
+    }
+
     .header{
         flex-direction: column;
-        margin: 0 -12px;
         margin-bottom: 40px;
+        padding: 0px;
     }
 
     .logo{
@@ -282,7 +316,7 @@ a:hover{
         padding:12px 0;
     }
 
-    .h1{
+    h1{
         font-size: 24px;
     }
 
@@ -290,9 +324,9 @@ a:hover{
         font-size: 16px;
     }
 
-    .box {
+    select {
         font-size: 18px;
-        max-width: 276px;
+        max-width: 70%;
         margin-left:8px;
     }
 
@@ -315,7 +349,7 @@ a:hover{
     }
 
     .contact {
-        font-size: 16px;
+        font-size: 14px;
     }
 
 

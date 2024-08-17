@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="bg-red">
-        <div class="header container d-flex">
+        <div class="header d-flex">
             <a href="index.html">
                 <img class="logo" src="images/logo-white.png" alt="logo-white">
             </a>
@@ -25,13 +25,15 @@
     </div>
     <div class="container">
         <div class="content">
-            <div class="title1 h1">門市據點</div>
+            <h1 class="title1">門市據點</h1>
             <div class="area d-flex">
                 <div class="h3">選擇地區</div>
-                <div class="box d-flex">
-                <p>台北市</p>
-                <span class="material-symbols-outlined">arrow_drop_down</span>
-                </div>    
+                <select class="custom-select d-flex">
+                    <option selected>台北市</option>
+                    <option value="1">桃園市</option>
+                    <option value="2">台中市</option>
+                    <option value="3">高雄市</option>
+                </select>    
             </div>
         </div>
         <div class="colum">
@@ -122,8 +124,8 @@
                 </ul>
                 <div class="contact h2 pd-b">
                 <ul>
-                <li><img src="images/call_36dp_.png" alt="phone">0800-000-000</li>
-                <li><img src="images/mail_40dp_.png" alt="mail">glasses@business.com</li>
+                <li><a href="tel:+"><img src="images/call_36dp_.png" alt="phone">0800-000-000</a></li>
+                <li><a href="mailto:"><img src="images/mail_40dp_.png" alt="mail">glasses@business.com</a></li>
                 </ul>
                 </div>
             </div>
