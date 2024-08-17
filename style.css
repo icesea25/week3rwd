@@ -79,7 +79,6 @@ a:hover{
 .header{
     justify-content: space-between;
     margin-bottom: 96px;
-    padding: 0 12px;
 }
 
 .logo{
@@ -140,18 +139,6 @@ select{
     background-position: right 0.5em top 50%, 0 0;
     background-size: contain, cover;
     background-repeat: no-repeat, repeat;
-}
-
-
-
-.box p{
-    color: #495057;
-    opacity: 0.75;
-}
-
-.material-symbols-outlined{
-    vertical-align: middle;
-    margin-left: auto;
 }
 
 .colum {
@@ -258,7 +245,7 @@ select{
 }
 
 
-@media (max-width:768px) {
+@media (max-width:800px) {
     
     .card{
         width: 50%;
@@ -273,8 +260,8 @@ select{
         margin-right: 10px;
     }
 
-    .footer .nav {
-        display: none;
+    .footer .nav li{
+        margin-right:28px;
     }
 
     .footer .right img{
@@ -284,7 +271,7 @@ select{
 }
 
 
-@media (max-width:576px) {
+@media (max-width:600px) {
     .container {
         max-width: 100%;
     }
